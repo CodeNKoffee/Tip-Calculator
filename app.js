@@ -1,11 +1,16 @@
-// Prompt user with food price question
-let food = Number(prompt("Enter food price:"));
-// Prompt user with desired tip percentage
-let tipPercentage = Number(prompt("tip %?") / 100);
-// Calculate the tip amount
-let tipAmount = food * tipPercentage;
-// Calculate total amount the user will pay
-let totalAmount = food + tipAmount;
-// Show user all amounts calculated
-console.log(`Tip: ${tipAmount}\nDue to pay: ${totalAmount}`);
-alert(`Tip: ${tipAmount}\nDue to pay: ${totalAmount}`);
+// VARIABLES
+const form = document.getElementById("form");
+const bill = document.getElementById("bill");
+const tipPercentage = document.getElementById("tip__percentage");
+const tipAmount = document.getElementById("tip__amount");
+const totalAmount = document.getElementById("total__amount");
+const empty = " ";
+
+
+// FUNCTIONS
+if (bill !== empty && tipPercentage !== empty) {
+  form.addEventListener("focusout", () => {
+    tipAmount.innerHTML = tipPercentage / 100;
+    totalAmount.innerHTML = totalAmount + bill;
+  })
+}
