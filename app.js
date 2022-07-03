@@ -8,9 +8,6 @@ const empty = " ";
 
 
 // FUNCTIONS
-if (bill !== empty && tipPercentage !== empty) {
-  form.addEventListener("focusout", () => {
-    tipAmount.innerHTML = tipPercentage / 100;
-    totalAmount.innerHTML = totalAmount + bill;
-  })
-}
+window.addEventListener("change", ()=> {
+  totalAmount.innerHTML = bill.value;
+})
