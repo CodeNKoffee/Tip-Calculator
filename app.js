@@ -9,5 +9,6 @@ const empty = " ";
 
 // FUNCTIONS
 window.addEventListener("change", () => {
-  tipAmount.innerHTML = (Number(tipPercentage.value) / 100) * bill.value;
+  tipAmount.innerHTML = ((Number(tipPercentage.value) / 100) * bill.value);
+  totalAmount.innerHTML = Number(bill.value) + (Number(tipPercentage.value) / 100) * bill.value;
 })
