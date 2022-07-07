@@ -113,6 +113,30 @@ input[type=number] {
 }
 
 
+/*
+
+RESPNOSIVENESS
+
+*/
+@media(max-width: 498px) {
+  .tip__calculator {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container__left {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .container__right {
+    border-radius: 0 0 24px 24px;
+  }
+}
+
+
 
 
 
