@@ -118,7 +118,7 @@ input[type=number] {
 RESPNOSIVENESS
 
 */
-@media(max-width: 498px) {
+@media(max-width: 478px) {
   .tip__calculator {
     flex-direction: column;
   }
