@@ -9,4 +9,4 @@ const totalAmount = document.getElementById("total__amount");
 window.addEventListener("change", () => {
   tipAmount.innerHTML = ((Number(tipPercentage.value) / 100) * bill.value).toFixed(2);
   totalAmount.innerHTML = (Number(bill.value) + (Number(tipPercentage.value) / 100) * bill.value).toFixed(2);
-})
+})  
